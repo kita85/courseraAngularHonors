@@ -1,0 +1,9 @@
+p.progress-title {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 80px;
+}
+.progress {
+    height: 10px;
+    margin: 7px 0 0 0;
+}

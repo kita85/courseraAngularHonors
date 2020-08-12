@@ -1,0 +1,14 @@
+<div id="header" class="section">
+    <span>Kita Cranfill</span>
+
+    <div class="item-right">
+        <ul>
+            <li><a href="#intro" [routerLinkActive]="['active']">Home</a></li>
+            <li><a href="#about" [routerLinkActive]="['active']">About</a></li>
+            <li><a href="#projects" [routerLinkActive]="['active']">Projects</a></li>
+            <li><a href="#skills" [routerLinkActive]="['active']">Skills</a></li>
+            <li><a routerLink="/blog" [routerLinkActive]="['active']">Blog</a></li>
+            <li><a href="#contact" [routerLinkActive]="['active']" (click)="scrollToElement(target)">Contact</a></li>
+        </ul>
+    </div>
+</div>

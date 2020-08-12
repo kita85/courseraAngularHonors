@@ -1,0 +1,25 @@
+#intro {
+    padding-bottom: 0px;
+    background-color: #f0f4ff;
+}
+#intro img {
+    max-width: 325px;
+    width: 100%;
+}
+.jobTitle {
+    text-decoration: underline;
+}
+span.stopTimer {
+    color: #da3232;
+    background-color: #ff00002b;
+    padding: 2px 7px 3px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.jobTitle:hover span.stopTimer {
+    display: block!important;
+}

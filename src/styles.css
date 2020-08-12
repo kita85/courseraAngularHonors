@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+@import "~font-awesome/css/font-awesome.min.css";
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.section {
+    padding: 80px 50px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.item-right {
+    float: right;
+}
+.item-left {
+    float: left;
+}
+.h1, h1 {
+    font-size: 4.5rem!important;
+}
+html {
+    scroll-behavior: smooth;
+  }
