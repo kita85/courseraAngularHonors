@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  jobTitles: any = ["Web Designer", "Energy Lover","Software Engineer"];
+  jobTitles: any = ["Web Designer","Software Engineer"];
   jobTitle: string = "Software Engineer";
   index: number = 0;
   timer: any;
