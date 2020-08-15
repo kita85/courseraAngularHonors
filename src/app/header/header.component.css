@@ -16,3 +16,6 @@ ul li {
 #header a.active {
     color: #007aff;
 }
+.mobileMenu {
+    display: none;
+}

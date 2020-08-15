@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
 #intro {
     padding-bottom: 0px;
     background-color: #f0f4ff;
+    z-index: 1;
+    height: calc(75vh - 64px);
+    position: relative;
 }
 #intro img {
-    max-width: 325px;
-    width: 100%;
+    width: 45vh;
+    z-index: 1;
+    position: relative;
 }
+#intro .me {
+    position: relative;
+    z-index: 10;
+}
+/*
+#about {
+    height: 25vh;
+}*/
 .jobTitle {
     text-decoration: underline;
 }
@@ -22,4 +35,72 @@ span.stopTimer {
 }
 .jobTitle:hover span.stopTimer {
     display: block!important;
+}
+.sign {
+    font-family: 'League Script', cursive;
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+.fa-circle:before {
+    content: "\f111";
+    margin: 0 5px 0 0;
+    /* color: #283967; */
+    color: #d8dde8;
+    font-size: 12px;
+}
+.blocks {
+    overflow:hidden;
+}
+.blocks div {
+    padding: 24px;
+}
+.blocks .row {
+    padding: 0px;
+    margin: 0px;
+}
+.blocks div.col:nth-child(1) {
+    background-color: #303030;
+}
+.blocks div.col:nth-child(2) {
+    background-color: #303030;
+}
+.blocks div.col:nth-child(3) {
+    background-color: #ffe217;
+}
+.blocks div.col:nth-child(4) {
+    background-color: #f1902d;
+}
+.blocks div.col:nth-child(5) {
+    background-color: #ff5e00;
+}
+.blocks div.col:nth-child(6) {
+    background-color: #ff003b;
+}
+
+.header-separator {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    bottom: -2px;
+    overflow: hidden;
+    z-index: 45;
+}
+
+.header-separator-bottom {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+}
+.header-separator svg {
+    display: block;
+    width: calc(100% + 1.3px);
+}
+button.btn-primary a {
+    color: white!important;
+}
+div#about {
+    z-index: 100000;
+    position: relative;
+    background-color: white;
 }

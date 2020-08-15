@@ -1,6 +1,38 @@
 #projects {
     background-color: #eee;
+    /*background-image: url(../../assets/images/space.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;*/
 }
-#projects img {
+#projects .col img {
     width: 100%;
+    max-width: 310px;
+    border: 5px solid white;
+    cursor: pointer;
+}
+#projects a {
+    display: block;
+    width: 310px;
+    margin: 0 auto;
+}
+.projectBox {
+    max-width: 310px;
+    max-height: 310px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.hiddenInfo {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -200px;
+    left: 5px;
+    width: calc(100% - 10px);
+    padding: 30px 20px;
+    color: #0d0e15;
+    transition: bottom .5s;
+}
+.projectBox.active .hiddenInfo{
+    bottom: 5px;
 }

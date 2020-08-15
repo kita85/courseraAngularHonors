@@ -1,8 +1,10 @@
 <div id="header" class="section">
-    <span>Kita Cranfill</span>
+    <span><i class="fa fa-hand-spock-o"></i> Live Long</span>
 
     <div class="item-right">
-        <ul>
+        <i [hidden]="mobileMenuOpen" class="mobileMenu fa fa-bars" (click)="mobileMenuOpen = !mobileMenuOpen"></i>
+        <i [hidden]="!mobileMenuOpen" class="mobileMenu fa fa-times"(click)="mobileMenuOpen = !mobileMenuOpen"></i>
+        <ul [class.mobileMenuOpen]="mobileMenuOpen">
             <li><a href="#intro" [routerLinkActive]="['active']">Home</a></li>
             <li><a href="#about" [routerLinkActive]="['active']">About</a></li>
             <li><a href="#projects" [routerLinkActive]="['active']">Projects</a></li>

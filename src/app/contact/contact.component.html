@@ -1,26 +1,30 @@
 <div id="contact" class="section">
     <div class="container">
         <h2>Contact Me</h2>
-        <form>
+        <p class="line"></p>
+        <form (submit)="sendForm()">
             <div class="row">
                 <div class="col">
                     <label for="">Name
-                        <input type="text">
+                        <input type="text" required>
                     </label>
                 </div>
                 <div class="col">
                     <label for="">Email
-                        <input type="text">
+                        <input type="email" required>
                     </label>
                 </div>
             </div>
             <label for="">Subject
-                <input type="text">
+                <input type="text" required>
             </label>
             <br>
             <label for="">Message
-                <textarea></textarea>
+                <textarea required></textarea>
             </label>
+            <button class="btn btn-primary" type="submit">Send</button>
         </form>
+        <div class="success" [hidden]="!success">Your message have been successfully sent.</div>
+        <div class="failure" [hidden]="!failure">Something went wrong. Check your message and try again.</div>
     </div>
 </div>

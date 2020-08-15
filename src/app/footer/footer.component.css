@@ -1,4 +1,7 @@
 #footer {
-    background-color: #000;
+    background-color: #0c0e15;
     color: white;
+}
+#footer i {
+    padding: 10px;
 }

@@ -1,15 +1,40 @@
 <div id="projects" class="section">
     <div class="container">
-        <h2>Projects</h2>
+        <h2>Projects & Companies</h2>
+        <p class="line"></p>
         <div class="row">
             <div class="col">
-                <img src="https://placehold.it/300x300" alt="">
+                <div class="projectBox" [ngClass]="projectBox1" (mouseover)="projectBox1='active'" (mouseout)="projectBox1='inactive'">
+                    <a href="https://kitacranfill.com/bigfoot/" target="_blank">
+                        <img src="../../assets/images/bigfoot.png" alt="">
+                    </a>
+                    <div class="hiddenInfo">
+                        <h4>Bigfoot Locator</h4>
+                        <p class="tag">Google Map API</p>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <img src="https://placehold.it/300x300" alt="">
+                <div class="projectBox" [ngClass]="projectBox2" (mouseover)="projectBox2='active'" (mouseout)="projectBox2='inactive'">
+                    <a href="https://bookcreative.com/" target="_blank">
+                        <img src="../../assets/images/bookcreative.png" alt="">
+                    </a>
+                    <div class="hiddenInfo">
+                        <h4>BookCreative</h4>
+                        <p class="tag">Wordpress</p>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <img src="https://placehold.it/300x300" alt="">
+                <div class="projectBox" [ngClass]="projectBox3" (mouseover)="projectBox3='active'" (mouseout)="projectBox3='inactive'">
+                    <a href="#" target="_blank">
+                        <img src="../../assets/images/resume.png" alt="">
+                    </a>
+                    <div class="hiddenInfo">
+                        <h4>Resume Website Template</h4>
+                        <p class="tag">Angular</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

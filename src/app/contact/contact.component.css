@@ -1,6 +1,9 @@
 #contact {
-    background-color: #333;
+    background-color: #2a2f3e;
     color: white;
+}
+#contact h2 {
+    color: white!important;
 }
 label,input, textarea {
     width: 100%;
@@ -8,7 +11,21 @@ label,input, textarea {
 input, textarea {
     border: none;
     padding: 5px;
-    background-color: #464646;
+    background-color: #454c61;
     border-radius: 3px;
     color: white;
+}
+.success {
+    background-color: #3e6c46;
+    border: 1px solid #073e08;
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+.failure {
+    background-color: #6c3e49;
+    border: 1px solid #3e0707;
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-size: 13px;
 }
